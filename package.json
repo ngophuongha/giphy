@@ -15,6 +15,8 @@
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-beta.6",
     "react-dom": "^17.0.2",
+    "react-full-screen": "^1.1.0",
+    "react-grid-gallery": "^0.5.5",
     "react-infinite-scroll-component": "^6.1.0",
     "react-lazyload": "^3.2.0",
     "react-scripts": "4.0.3",
@@ -25,6 +27,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:watch": "jest --watch -c test/jest.config.js",
+    "test:coverage": "jest -c ./test/jest.config.js --collectCoverage --verbose",
     "eject": "react-scripts eject",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },

@@ -1,5 +1,7 @@
 import InfiniteScroll from "react-infinite-scroll-component";
 import LazyLoad from "react-lazyload";
+import React, {useCallback} from 'react';
+import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import Spinner from "react-bootstrap/Spinner";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -13,7 +15,9 @@ export const GifList = ({
   onLoadMore = () => null,
   hasMoreItems = false,
 }: GifListProps): JSX.Element => {
+
   return (
+    
       <InfiniteScroll
         dataLength={gifList.data.length}
         next={onLoadMore}
@@ -46,5 +50,6 @@ export const GifList = ({
           ))}
         </Row>
       </InfiniteScroll>
+     
   );
 };
