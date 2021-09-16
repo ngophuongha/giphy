@@ -1,9 +1,9 @@
 import { render } from "@testing-library/react";
-import App from "./App";
+import { TopSearch }from "./index";
 
-describe("Index Page", () => {
+describe("Loader", () => {
   it("should render without crashing", () => {
-    const { container } = render(<App />);
+    const { container } = render(<TopSearch />);
     expect(container).toMatchSnapshot();
   });
 });
