@@ -1,25 +1,24 @@
 import Card from "react-bootstrap/Card";
-import React, { Fragment, useCallback, useState } from "react";
-import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import { Fragment, useState } from "react";
 import { GifProps } from "./GifItem.type";
 import { GifFullscreen } from "../gif-fullscreen/GifFullscreen";
 
 export const GifItem = ({
   id,
   imageSrc,
-  title,
+//   title,
   username,
-  rating,
+//   rating,
 }: GifProps): JSX.Element => {
-  const handle = useFullScreenHandle();
   const [show, setShow] = useState(false);
-  const toggle = () => {setShow(!show); console.log('show: ', show)};
+  const toggle = () => setShow(true);
   const close = () => setShow(false);
   return (
     <Fragment>
       <Card
         style={{ width: "18rem", cursor: "pointer" }}
         id={id}
+        data-testid={1}
         className="border-0 overflow-hidden"
         onClick={toggle}
       >

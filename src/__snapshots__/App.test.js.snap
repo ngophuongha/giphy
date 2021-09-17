@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Loader should render without crashing 1`] = `
+exports[`Index Page should render without crashing 1`] = `
 <div>
   <div
     class="container"

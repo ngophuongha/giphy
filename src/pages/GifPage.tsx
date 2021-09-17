@@ -6,6 +6,7 @@ import { NavBar } from "../components/navbar/NavBar";
 import { TopSearch } from "../components/top-search/TopSearch";
 import { getGifItems } from "../modules/gif-list/service/Gifs.service";
 import { GifList } from "../modules/gif-list/GifList";
+import styles from './GifPage.module.scss';
 
 export const GifPage = (): JSX.Element => {
   const [offset, setOffset] = useState(0);
@@ -17,7 +18,7 @@ export const GifPage = (): JSX.Element => {
       const response = await getGifItems(offset);
       setData((prev) => [...prev, ...response.data]);
     } catch (error) {
-      //   console.log(error);
+      console.log(error);
       setHasMore(false);
     }
   }, [offset]);
@@ -33,7 +34,7 @@ export const GifPage = (): JSX.Element => {
     }
   };
   return (
-    <Container style={{ width: "70%" }}>
+    <Container className={styles.container}>
       <NavBar />
       <TopSearch />
       <header className="d-flex align-items-center">

@@ -11,6 +11,7 @@ export const GifFullscreen = ({
     <Modal
     dialogClassName="modal-45w"
       aria-labelledby="contained-modal-title-vcenter"
+      data-testid="gif-fullscreen"
       centered
       show={open}
       onHide={setShow}
