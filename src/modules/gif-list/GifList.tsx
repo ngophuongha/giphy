@@ -8,6 +8,10 @@ import { GifListProps } from "./GifList.type";
 import { Loader } from "../../components/loader";
 import styles from "./GifList.module.scss";
 
+const LARGE_SCREEN_COL = 4;
+const MEDIUM_SCREEN_COL = 3;
+const SMALL_SCREEN_COL = 2;
+
 export const GifList = ({
   gifList,
   onLoadMore,
@@ -28,9 +32,9 @@ export const GifList = ({
       }
     >
       <Row
-        lg={4}
-        md={3}
-        sm={2}
+        lg={LARGE_SCREEN_COL}
+        md={MEDIUM_SCREEN_COL}
+        sm={SMALL_SCREEN_COL}
         className={`g-2 ${styles["custom-row"]}`}
         data-testid="gif-list"
       >
