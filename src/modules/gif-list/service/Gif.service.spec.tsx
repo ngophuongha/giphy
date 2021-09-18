@@ -1,19 +1,26 @@
 import { getGifItems } from "./Gifs.service";
 import { mockGifPage } from "../../../pages/GifPage.fixture";
+import * as api from "../../../api/api.wrapper";
 
-jest.mock("./Gifs.service");
-jest.mock("axios");
-const mockGetGifs = getGifItems as jest.MockedFunction<typeof getGifItems>;
+jest.mock("../../../api/api.wrapper");
 
 describe("Get Gif Service", () => {
-  beforeEach(() => {
-    jest.resetAllMocks();
+  const requestSpyFn = jest.spyOn(api, "default");
+  afterEach(() => {
+    requestSpyFn.mockReset();
   });
 
-  it("should return data when API call is successful", () => {
-    const mockService = mockGetGifs.mockResolvedValueOnce({
+  it("should return data when API fetching succeeds", async () => {
+    requestSpyFn.mockResolvedValueOnce({
       data: mockGifPage,
     });
-    expect(mockService).toEqual({ data: mockGifPage });
+    const res = await getGifItems(20);
+    expect(res).toEqual({ data: mockGifPage });
+  });
+
+  it("should return Error when API fetching fails", async () => {
+    requestSpyFn.mockRejectedValueOnce(new Error("Something went wrong"));
+    const res = await getGifItems(20);
+    expect(res).toEqual([]);
   });
 });

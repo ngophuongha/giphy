@@ -2,8 +2,7 @@
 
 exports[`Loader should render without crashing 1`] = `
 <div
-  class="container"
-  style="width: 70%;"
+  class="container container"
 >
   <nav
     class="border-bottom navbar navbar-expand-lg navbar-light"
@@ -134,7 +133,7 @@ exports[`Loader should render without crashing 1`] = `
       style="height: auto; overflow: auto;"
     >
       <div
-        class="g-2 row row-cols-lg-4 row-cols-md-3 row-cols-sm-2"
+        class="g-2 custom-row row row-cols-lg-4 row-cols-md-3 row-cols-sm-2"
         data-testid="gif-list"
       />
       <div
