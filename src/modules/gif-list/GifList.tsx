@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import { GifItem } from "../../modules/gif-list/gif-item/GifItem";
 import { GifListProps } from "./GifList.type";
 import { Loader } from "../../components/loader";
+import styles from "./GifList.module.scss";
 
 export const GifList = ({
   gifList,
@@ -26,10 +27,19 @@ export const GifList = ({
         </p>
       }
     >
-      <Row lg={4} md={3} sm={2} className="g-2" data-testid="gif-list">
+      <Row
+        lg={4}
+        md={3}
+        sm={2}
+        className={`g-2 ${styles["custom-row"]}`}
+        data-testid="gif-list"
+      >
         {gifList.data.map((card, index) => (
           <LazyLoad key={index} offset={[-50, 100]} placeholder={<Loader />}>
-            <Col key={index} className="d-flex img-fluid">
+            <Col
+              key={index}
+              className={`d-flex img-fluid ${styles["custom-column"]}`}
+            >
               <GifItem
                 id={card.id}
                 imageSrc={card.images.fixed_width_downsampled.url}

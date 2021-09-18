@@ -6,7 +6,7 @@ import { NavBar } from "../components/navbar/NavBar";
 import { TopSearch } from "../components/top-search/TopSearch";
 import { getGifItems } from "../modules/gif-list/service/Gifs.service";
 import { GifList } from "../modules/gif-list/GifList";
-import styles from './GifPage.module.scss';
+import styles from "./GifPage.module.scss";
 
 export const GifPage = (): JSX.Element => {
   const [offset, setOffset] = useState(0);
@@ -38,7 +38,8 @@ export const GifPage = (): JSX.Element => {
       <NavBar />
       <TopSearch />
       <header className="d-flex align-items-center">
-        <FontAwesomeIcon icon={faChartLine} /> <h3 className="h4 px-3">Trending Gifs</h3>
+        <FontAwesomeIcon icon={faChartLine} />{" "}
+        <h3 className="h4 px-3">Trending Gifs</h3>
       </header>
       <GifList
         gifList={{ data: data }}

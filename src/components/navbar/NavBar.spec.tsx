@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import { NavBar }from "./index";
+import { NavBar } from "./index";
 
 describe("Loader", () => {
   it("should render without crashing", () => {

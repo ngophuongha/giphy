@@ -6,10 +6,10 @@ import { GifFullscreen } from "../gif-fullscreen/GifFullscreen";
 export const GifItem = ({
   id,
   imageSrc,
-//   title,
+  //   title,
   username,
-//   rating,
-}: GifProps): JSX.Element => {
+}: //   rating,
+GifProps): JSX.Element => {
   const [show, setShow] = useState(false);
   const toggle = () => setShow(true);
   const close = () => setShow(false);
@@ -27,7 +27,7 @@ export const GifItem = ({
           <p className="card-text text-white">{username}</p>
         </div>
       </Card>
-      <GifFullscreen open={show} setShow={close} imageUrl={imageSrc} /> 
+      <GifFullscreen open={show} setShow={close} imageUrl={imageSrc} />
     </Fragment>
   );
 };

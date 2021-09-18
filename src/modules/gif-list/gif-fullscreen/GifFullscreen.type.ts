@@ -1,6 +1,5 @@
-
 export interface GifFullscreenProps {
-    open: boolean;
-    setShow?: () => void;
-    imageUrl: string;
+  open: boolean;
+  setShow?: () => void;
+  imageUrl: string;
 }

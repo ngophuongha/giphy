@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import { Loader }from "./index";
+import { Loader } from "./index";
 
 describe("Loader", () => {
   it("should render without crashing", () => {

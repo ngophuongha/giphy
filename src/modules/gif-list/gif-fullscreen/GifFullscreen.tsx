@@ -9,15 +9,15 @@ export const GifFullscreen = ({
 }: GifFullscreenProps): JSX.Element => {
   return (
     <Modal
-    dialogClassName="modal-45w"
+      dialogClassName="modal-45w"
       aria-labelledby="contained-modal-title-vcenter"
       data-testid="gif-fullscreen"
       centered
       show={open}
       onHide={setShow}
     >
-        <ModalHeader closeButton></ModalHeader>
-        <img alt="img" src={imageUrl} />
+      <ModalHeader closeButton></ModalHeader>
+      <img alt="img" src={imageUrl} />
     </Modal>
   );
 };

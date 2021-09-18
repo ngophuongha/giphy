@@ -6,7 +6,12 @@ import { Fragment } from "react";
 export const NavBar = (): JSX.Element => {
   return (
     <Fragment>
-      <Navbar collapseOnSelect expand="lg" variant="light" className="border-bottom">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        variant="light"
+        className="border-bottom"
+      >
         <Container>
           <Navbar.Brand href="#home">
             <img
