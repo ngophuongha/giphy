@@ -1,28 +1,21 @@
 import Card from "react-bootstrap/Card";
 import { Fragment, useState } from "react";
 import { GifProps } from "./GifItem.type";
-import { GifFullscreen } from "../gif-fullscreen/GifFullscreen";
+import { GifFullscreen } from "../gif-fullscreen";
 
-export const GifItem = ({
-  id,
-  imageSrc,
-  //   title,
-  username,
-}: //   rating,
-GifProps): JSX.Element => {
+export const GifItem = ({ id, imageSrc, username }: GifProps): JSX.Element => {
   const [show, setShow] = useState(false);
   const toggle = () => setShow(true);
   const close = () => setShow(false);
   return (
     <Fragment>
       <Card
-        style={{ width: "18rem", cursor: "pointer" }}
         id={id}
         data-testid={1}
-        className="border-0 overflow-hidden"
+        className="border-0 overflow-hidden mt-2"
         onClick={toggle}
       >
-        <img alt="" src={imageSrc} />
+        <img alt="" src={imageSrc} className='overflow-hidden' />
         <div className="card-img-overlay h-100 d-flex flex-column justify-content-end">
           <p className="card-text text-white">{username}</p>
         </div>

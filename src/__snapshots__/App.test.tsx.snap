@@ -3,8 +3,7 @@
 exports[`Index Page should render without crashing 1`] = `
 <div>
   <div
-    class="container"
-    style="width: 70%;"
+    class="container container"
   >
     <nav
       class="border-bottom navbar navbar-expand-lg navbar-light"
@@ -131,12 +130,17 @@ exports[`Index Page should render without crashing 1`] = `
       class="infinite-scroll-component__outerdiv"
     >
       <div
-        class="infinite-scroll-component "
+        class="infinite-scroll-component overflow-hidden"
         style="height: auto; overflow: auto;"
       >
         <div
-          class="g-2 row row-cols-lg-4 row-cols-md-3 row-cols-sm-2"
-        />
+          class="g-2 row row-cols-xl-4 row-cols-md-3 row-cols-sm-2 row-cols-2"
+          data-testid="gif-list"
+        >
+          <div />
+          <div />
+          <div />
+        </div>
         <div
           class="spinner-grow text-primary"
           role="status"

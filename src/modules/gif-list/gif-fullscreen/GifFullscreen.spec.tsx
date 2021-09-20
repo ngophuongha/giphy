@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import { GifFullscreen } from "./GifFullscreen";
 
-describe("Loader", () => {
+describe("Gif Fullscreen", () => {
   it("should render without crashing", () => {
     const { container } = render(
       <GifFullscreen

@@ -1,8 +1,8 @@
 import { render } from "@testing-library/react";
 import { GifList } from "./GifList";
-import { mockGifPage } from "../../pages/GifPage.fixture";
+import { mockGifPage } from "../../pages/gif-page";
 
-describe("Loader", () => {
+describe("Gif List", () => {
   it("should render without crashing with only mandatory props", () => {
     const mockGifData = {
       data: mockGifPage,

@@ -2,10 +2,10 @@ import { useEffect, useState, useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 import Container from "react-bootstrap/Container";
-import { NavBar } from "../components/navbar/NavBar";
-import { TopSearch } from "../components/top-search/TopSearch";
-import { getGifItems } from "../modules/gif-list/service/Gifs.service";
-import { GifList } from "../modules/gif-list/GifList";
+import { NavBar } from "../../components/navbar";
+import { TopSearch } from "../../components/top-search";
+import { getGifItems } from "../../modules/gif-list/service";
+import { GifList } from "../../modules/gif-list";
 import styles from "./GifPage.module.scss";
 
 export const GifPage = (): JSX.Element => {

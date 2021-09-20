@@ -2,14 +2,12 @@ import { act, render, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { GifItem } from "./GifItem";
 
-describe("Loader", () => {
+describe("Gif Item", () => {
   it("should render without crashing", () => {
     const { container } = render(
       <GifItem
         id="1"
         imageSrc="http://localhost:8000/mock-url"
-        rating="g"
-        title="mock-gif"
         username="abc"
       />
     );
@@ -21,8 +19,6 @@ describe("Loader", () => {
       <GifItem
         id="1"
         imageSrc="http://localhost:8000/mock-url"
-        rating="g"
-        title="mock-gif"
         username="abc"
       />
     );
@@ -37,8 +33,6 @@ describe("Loader", () => {
       <GifItem
         id="1"
         imageSrc="http://localhost:8000/mock-url"
-        rating="g"
-        title="mock-gif"
         username="abc"
       />
     );

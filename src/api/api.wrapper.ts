@@ -8,11 +8,8 @@ const apiWrapper = (options: AxiosRequestConfig) => {
   };
 
   const onError = (error: AxiosError) => {
-    if (error.response) {
-      console.error("Headers: ", error.response);
-    } else {
-      console.error("Error message: ", error.message);
-    }
+    console.log('Response: ', error.response);
+    console.log('Message: ', error.message);
     return error.response;
   };
   return apiRequest(options).then(onSuccess).catch(onError);

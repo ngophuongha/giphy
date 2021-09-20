@@ -1,6 +1,5 @@
 import * as api from "./api.wrapper";
 import * as apiConstants from "./api.constants";
-import axios from "axios";
 
 describe("API Wrapper", () => {
   beforeEach(() => {

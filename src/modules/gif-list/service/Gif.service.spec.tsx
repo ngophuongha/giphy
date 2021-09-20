@@ -1,5 +1,5 @@
 import { getGifItems } from "./Gifs.service";
-import { mockGifPage } from "../../../pages/GifPage.fixture";
+import { mockGifPage } from "../../../pages/gif-page/GifPage.fixture";
 import * as api from "../../../api/api.wrapper";
 
 jest.mock("../../../api/api.wrapper");

@@ -6,13 +6,13 @@ import {
   fireEvent,
 } from "@testing-library/react";
 import { GifPage } from "./GifPage";
-import { getGifItems } from "../modules/gif-list/service/Gifs.service";
+import { getGifItems } from "../../modules/gif-list/service/Gifs.service";
 import { mockGifPage } from "./GifPage.fixture";
 
-jest.mock("../modules/gif-list/service/Gifs.service");
+jest.mock("../../modules/gif-list/service/Gifs.service");
 const mockGetGifs = getGifItems as jest.MockedFunction<typeof getGifItems>;
 
-describe("Loader", () => {
+describe("Gif Page", () => {
   beforeEach(() => {
     jest.resetAllMocks();
   });
@@ -31,7 +31,7 @@ describe("Loader", () => {
     });
     await waitFor(() => {
       const list = screen.getByTestId("gif-list");
-      expect(list.children).toHaveLength(2);
+      expect(list.children).toHaveLength(3); //plus the div tag
     });
   });
 
@@ -52,8 +52,8 @@ describe("Loader", () => {
       render(<GifPage />);
     });
     await waitFor(() => {
-      const list = screen.getByTestId("gif-list");
-      expect(list.children).toHaveLength(0);
+      const ending = screen.getByText('Yay! You have seen it all') //the ending text
+      expect(ending).toBeInTheDocument();
     });
   });
 });
