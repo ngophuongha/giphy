@@ -1,15 +1,15 @@
 import InfiniteScroll from "react-infinite-scroll-component";
-import LazyLoad from "react-lazyload";
 import Row from "react-bootstrap/Row";
 
 import { GifItem } from "../../modules/gif-list/gif-item";
 import { GifListProps } from "./GifList.type";
 import { Loader } from "../../components/loader";
 import { useWindowDimensions } from "../../utils/getScreenSize";
-
-const LARGE_SCREEN_COL = 4;
-const MEDIUM_SCREEN_COL = 3;
-const SMALL_SCREEN_COL = 2;
+import {
+  LARGE_SCREEN_COL,
+  MEDIUM_SCREEN_COL,
+  SMALL_SCREEN_COL,
+} from "../../constants/variables";
 
 export const GifList = ({
   gifList,
@@ -35,7 +35,6 @@ export const GifList = ({
       <Row
         xl={LARGE_SCREEN_COL}
         md={MEDIUM_SCREEN_COL}
-        sm={SMALL_SCREEN_COL}
         xs={SMALL_SCREEN_COL}
         className="g-2"
         data-testid="gif-list"
@@ -45,13 +44,12 @@ export const GifList = ({
             {gifList.data.map(
               (card, index) =>
                 index % colNum === col && (
-                  <LazyLoad data-testid="lazy-load">
-                    <GifItem
-                      id={card.id}
-                      imageSrc={card.images.fixed_height_downsampled.url}
-                      username={card.username}
-                    />
-                  </LazyLoad>
+                  <GifItem
+                    id={card.id}
+                    title={card.title}
+                    imageSrc={card.images.fixed_height_downsampled.url}
+                    username={card.username}
+                  />
                 )
             )}
           </div>

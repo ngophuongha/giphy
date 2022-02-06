@@ -1,5 +1,4 @@
-import Modal from "react-bootstrap/Modal";
-import ModalHeader from "react-bootstrap/ModalHeader";
+import { Modal } from "react-bootstrap";
 import { GifFullscreenProps } from "./GifFullscreen.type";
 
 export const GifFullscreen = ({
@@ -16,7 +15,6 @@ export const GifFullscreen = ({
       show={open}
       onHide={setShow}
     >
-      <ModalHeader closeButton></ModalHeader>
       <img alt="img" src={imageUrl} />
     </Modal>
   );

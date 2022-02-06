@@ -12,6 +12,7 @@ export const GifPage = (): JSX.Element => {
   const [offset, setOffset] = useState(0);
   const [data, setData] = useState<any[]>([]);
   const [hasMore, setHasMore] = useState(true);
+  const ITEMS_PER_FETCH = 20;
 
   const fetchData = useCallback(async () => {
     try {
@@ -29,7 +30,7 @@ export const GifPage = (): JSX.Element => {
 
   const onLoadMore = () => {
     if (hasMore) {
-      const newOffset = offset + 20;
+      const newOffset = offset + ITEMS_PER_FETCH;
       setOffset(newOffset);
     }
   };

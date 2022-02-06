@@ -3,6 +3,7 @@ export type GifsResponseProps = {
   data: Array<{
     id: string;
     username: string;
+    title: string;
     images: {
       fixed_height_downsampled: {
         url: string;

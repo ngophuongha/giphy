@@ -1,7 +1,8 @@
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
 import { Fragment } from "react";
+import { Nav, Navbar, Container } from "react-bootstrap";
+import Switch from "react-switch";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = (): JSX.Element => {
   return (
@@ -10,7 +11,7 @@ export const NavBar = (): JSX.Element => {
         collapseOnSelect
         expand="lg"
         variant="light"
-        className="border-bottom"
+        className="border-bottom p-3"
       >
         <Container>
           <Navbar.Brand href="#home">
@@ -29,8 +30,23 @@ export const NavBar = (): JSX.Element => {
               <Nav.Link href="#">Reactions</Nav.Link>
               <Nav.Link href="#">Entertainment</Nav.Link>
             </Nav>
-            <Nav>
-              <Nav.Link href="#">Sign up</Nav.Link>
+            <Nav className="align-items-center">
+              <Switch
+                checked={true}
+                onChange={() => console.log("")}
+                height={25}
+                checkedIcon={
+                  <FontAwesomeIcon
+                    icon={faSun}
+                    className="h-100 w-100 p-1"
+                    color="#ffa701"
+                  />
+                }
+                uncheckedIcon={
+                  <FontAwesomeIcon icon={faMoon} className="h-100 w-100" />
+                }
+                onColor="#888"
+              />
               <Nav.Link eventKey={2} href="#">
                 Sign in
               </Nav.Link>

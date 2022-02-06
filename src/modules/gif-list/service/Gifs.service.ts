@@ -1,12 +1,17 @@
 import { GifRequestProps } from "./Gifs.service.type";
 import * as apiConstants from "../../../api/api.constants";
 import apiWrapper from "../../../api/api.wrapper";
+import { LIMIT_ITEMS } from "../../../constants/variables";
 
 export const getGifItems: GifRequestProps = async (offset: number) => {
-  console.log("offset: ", offset);
   try {
     const response = await apiWrapper({
-      url: `${apiConstants.GET_20_ITEMS_PER_OFFSET_API_ENDPOINT}&offset=${offset}`,
+      url: `${apiConstants.TRENDING_API_ENDPOINT}`,
+      params: {
+        api_key: process.env.REACT_APP_API_KEY,
+        limit: LIMIT_ITEMS,
+        offset: offset,
+      },
     });
     return response;
   } catch (error) {

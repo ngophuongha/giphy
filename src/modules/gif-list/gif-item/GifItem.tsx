@@ -1,26 +1,34 @@
+import { useState } from "react";
 import Card from "react-bootstrap/Card";
-import { Fragment, useState } from "react";
+import LazyLoad from "react-lazyload";
+import { LazyLoader } from "../../../components/loader";
 import { GifProps } from "./GifItem.type";
 import { GifFullscreen } from "../gif-fullscreen";
 
-export const GifItem = ({ id, imageSrc, username }: GifProps): JSX.Element => {
+export const GifItem = ({
+  id,
+  imageSrc,
+  username,
+  title,
+}: GifProps): JSX.Element => {
   const [show, setShow] = useState(false);
   const toggle = () => setShow(true);
   const close = () => setShow(false);
   return (
-    <Fragment>
+    <LazyLoad data-testid="lazy-load" placeholder={<LazyLoader />}>
       <Card
         id={id}
         data-testid={1}
         className="border-0 overflow-hidden mt-2"
         onClick={toggle}
+        style={{ cursor: "pointer" }}
       >
-        <img alt="" src={imageSrc} className='overflow-hidden' />
+        <img alt={title} src={imageSrc} className="overflow-hidden" />
         <div className="card-img-overlay h-100 d-flex flex-column justify-content-end">
           <p className="card-text text-white">{username}</p>
         </div>
       </Card>
       <GifFullscreen open={show} setShow={close} imageUrl={imageSrc} />
-    </Fragment>
+    </LazyLoad>
   );
 };
