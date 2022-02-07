@@ -1,2 +1,2 @@
-export * from './Gifs.service';
-export * from './Gifs.service.type';
+export * from "./Gifs.service";
+export * from "./Gifs.service.type";

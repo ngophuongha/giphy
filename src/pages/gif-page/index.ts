@@ -1,2 +1,2 @@
-export * from './GifPage.fixture';
-export * from './GifPage';
+export * from "./GifPage.fixture";
+export * from "./GifPage";

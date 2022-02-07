@@ -1,2 +1,2 @@
-export * from './GifFullscreen';
-export * from './GifFullscreen.type';
+export * from "./GifFullscreen";
+export * from "./GifFullscreen.type";

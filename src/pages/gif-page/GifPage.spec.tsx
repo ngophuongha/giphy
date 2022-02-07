@@ -52,7 +52,7 @@ describe("Gif Page", () => {
       render(<GifPage />);
     });
     await waitFor(() => {
-      const ending = screen.getByText('Yay! You have seen it all') //the ending text
+      const ending = screen.getByText("Yay! You have seen it all"); //the ending text
       expect(ending).toBeInTheDocument();
     });
   });

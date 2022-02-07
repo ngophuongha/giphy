@@ -1,2 +1,2 @@
-export * from './GifList';
-export * from './GifList.type';
+export * from "./GifList";
+export * from "./GifList.type";
