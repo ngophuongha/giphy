@@ -17,10 +17,9 @@ export const GifList = ({
   hasMoreItems = false,
 }: GifListProps): JSX.Element => {
   const { colNum } = useWindowDimensions();
-
   return (
     <InfiniteScroll
-      dataLength={gifList.data.length}
+      dataLength={gifList.length}
       next={onLoadMore}
       hasMore={hasMoreItems}
       loader={<Loader />}
@@ -40,14 +39,14 @@ export const GifList = ({
         data-testid="gif-list"
       >
         {Array.from(Array(colNum).keys()).map((col) => (
-          <div>
-            {gifList.data.map(
+          <div key={col}>
+            {gifList.map(
               (card, index) =>
                 index % colNum === col && (
                   <GifItem
                     id={card.id}
                     title={card.title}
-                    imageSrc={card.images.fixed_height_downsampled.url}
+                    imageSrc={card.images?.fixed_height_downsampled.url}
                     username={card.username}
                   />
                 )

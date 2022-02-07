@@ -33,7 +33,9 @@ export const NavBar = (): JSX.Element => {
             <Nav className="align-items-center">
               <Switch
                 checked={true}
-                onChange={() => console.log("")}
+                onChange={() => {
+                  //
+                }}
                 height={25}
                 checkedIcon={
                   <FontAwesomeIcon

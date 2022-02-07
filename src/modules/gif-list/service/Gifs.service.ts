@@ -13,7 +13,7 @@ export const getGifItems: GifRequestProps = async (offset: number) => {
         offset: offset,
       },
     });
-    return response;
+    return response.data;
   } catch (error) {
     return [];
   }

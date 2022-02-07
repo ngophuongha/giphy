@@ -15,8 +15,8 @@ export const Loader = (): JSX.Element => {
       xs={SMALL_SCREEN_COL}
       className="g-2"
     >
-      {Array.from(Array(colNum).keys()).map(() => (
-        <Col>
+      {Array.from(Array(colNum).keys()).map((col) => (
+        <Col key={col}>
           <LazyLoader />
         </Col>
       ))}
