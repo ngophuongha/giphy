@@ -18,6 +18,7 @@ export const GifItem = ({
     <LazyLoad data-testid="lazy-load" placeholder={<LazyLoader />}>
       <Card
         id={id}
+        key={id}
         data-testid={1}
         className="border-0 overflow-hidden mt-2"
         onClick={toggle}

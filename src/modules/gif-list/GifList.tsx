@@ -17,6 +17,7 @@ export const GifList = ({
   hasMoreItems = false,
 }: GifListProps): JSX.Element => {
   const { colNum } = useWindowDimensions();
+  console.log(gifList);
   return (
     <InfiniteScroll
       dataLength={gifList.length}
@@ -40,17 +41,20 @@ export const GifList = ({
       >
         {Array.from(Array(colNum).keys()).map((col) => (
           <div key={col}>
-            {gifList.map(
-              (card, index) =>
+            {gifList.map((card, index) => {
+              console.log("card la ", card);
+              return (
                 index % colNum === col && (
                   <GifItem
                     id={card.id}
+                    key={`col-${col}`}
                     title={card.title}
                     imageSrc={card.images?.fixed_height_downsampled.url}
                     username={card.username}
                   />
                 )
-            )}
+              );
+            })}
           </div>
         ))}
       </Row>

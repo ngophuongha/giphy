@@ -9,6 +9,7 @@ describe("Gif Item", () => {
         id="1"
         imageSrc="http://localhost:8000/mock-url"
         username="abc"
+        title="mock gif item"
       />
     );
     expect(container.firstChild).toMatchSnapshot();
@@ -20,6 +21,7 @@ describe("Gif Item", () => {
         id="1"
         imageSrc="http://localhost:8000/mock-url"
         username="abc"
+        title="mock gif item"
       />
     );
     act(() => {
@@ -34,6 +36,7 @@ describe("Gif Item", () => {
         id="1"
         imageSrc="http://localhost:8000/mock-url"
         username="abc"
+        title="mock gif item"
       />
     );
     await userEvent.click(getByTestId("1"));

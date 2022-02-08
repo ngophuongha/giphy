@@ -3,8 +3,12 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 import Switch from "react-switch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { themeChange, ThemeType } from "../../store/theme/theme";
 
 export const NavBar = (): JSX.Element => {
+  const dispatch = useAppDispatch();
+  const currentTheme = useAppSelector((state) => state.theme.theme);
   return (
     <Fragment>
       <Navbar
@@ -32,9 +36,11 @@ export const NavBar = (): JSX.Element => {
             </Nav>
             <Nav className="align-items-center">
               <Switch
-                checked={true}
-                onChange={() => {
-                  //
+                checked={currentTheme === ThemeType.Light}
+                onChange={(checked: boolean) => {
+                  dispatch(
+                    themeChange(checked ? ThemeType.Light : ThemeType.Dark)
+                  );
                 }}
                 height={25}
                 checkedIcon={
