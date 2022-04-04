@@ -4,6 +4,7 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 
 import { ThemeToggler } from "../theme-toggler";
 import { StyledNav } from "./NavBar.styled";
+import { LanguageSelector } from "../language-selector";
 
 export const NavBar = (): JSX.Element => {
   const { t } = useTranslation("common");
@@ -16,7 +17,7 @@ export const NavBar = (): JSX.Element => {
         className="border-bottom"
       >
         <Container>
-          <StyledNav href="#home">
+          <StyledNav href="/">
             <img
               alt=""
               src="/giphy-logo-1.svg"
@@ -33,6 +34,7 @@ export const NavBar = (): JSX.Element => {
               <StyledNav href="#">{t("navbar.entertainment")}</StyledNav>
             </Nav>
             <Nav className="flex-row align-items-center">
+              <LanguageSelector />
               <ThemeToggler />
               <StyledNav href="#">{t("navbar.signIn")}</StyledNav>
             </Nav>
