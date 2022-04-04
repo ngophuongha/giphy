@@ -12,9 +12,7 @@ describe("API Wrapper", () => {
     let response;
     try {
       response = await api.default({
-        url: `${
-          apiConstants.GET_20_ITEMS_PER_OFFSET_API_ENDPOINT
-        }&offset=${20}`,
+        url: `${apiConstants.TRENDING_API_ENDPOINT}`,
       });
     } catch (error) {
       errorMsg = "Something went wrong";
@@ -22,24 +20,16 @@ describe("API Wrapper", () => {
     expect(errorMsg).toEqual("");
   });
   it("should handle failed API fetching", async () => {
-    let errorMsg = "";
     try {
       await api.default({ url: "http://localhost:8000/undefined" });
-    } catch (error) {
-      errorMsg = "Something went wrong";
-    }
+    } catch (error) {}
     expect(console.error).toHaveBeenCalled();
   });
   it("should handle failed API fetching", async () => {
-    let errorMsg = "";
     await api
       .default({ url: "http://localhost:8000/undefined" })
-      .then(() => {
-        errorMsg = "No error";
-      })
-      .catch(() => {
-        errorMsg = "Yes error";
-      });
+      .then(() => {})
+      .catch(() => {});
 
     expect(console.error).toHaveBeenCalled();
   });

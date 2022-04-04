@@ -1,21 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Top Search should render without crashing 1`] = `
+exports[`Top Search should match snapshot 1`] = `
+.c0 {
+  background-color: #fff !important;
+  color: #000000 !important;
+}
+
+.c1 {
+  background-color: #fff !important;
+  color: #000000 !important;
+  border-color: #d3d3d3 !important;
+}
+
 <div>
   <div
     class="my-4 input-group"
   >
     <input
       aria-label="gif-sticker-search"
-      class="form-control"
+      class="c0 form-control"
       placeholder="Search all the GIFs and Stickers"
     />
-    <span
-      class="input-group-text"
-      id="basic-addon2"
+    <button
+      class="c1 btn btn-primary"
+      id="search-btn"
+      type="button"
     >
       Search
-    </span>
+    </button>
   </div>
 </div>
 `;

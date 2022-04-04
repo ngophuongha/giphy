@@ -1,4 +1,4 @@
-import { act, render, waitFor } from "@testing-library/react";
+import { act, render, waitFor } from "../../../../test";
 import userEvent from "@testing-library/user-event";
 import { GifItem } from "./GifItem";
 

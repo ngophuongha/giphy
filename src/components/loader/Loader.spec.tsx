@@ -1,8 +1,8 @@
-import { render } from "@testing-library/react";
+import { render } from "../../../test";
 import { Loader } from "./index";
 
 describe("Loader", () => {
-  it("should render without crashing", () => {
+  it("should match snapshot", () => {
     const { container } = render(<Loader />);
     expect(container).toMatchSnapshot();
   });

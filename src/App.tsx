@@ -1,33 +1,24 @@
-import styled, { ThemeProvider } from "styled-components";
-import theme from "styled-theming";
-import { useAppSelector } from "./store/hooks";
+import { StyledThemeProvider } from "./themes";
+import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
+
+import { store } from "./store/store";
+import { Wrapper } from "./components/wrapper";
+import { PageRoute } from "./pages/PageRoute";
+
 import "./App.css";
-import { GifPage } from "./pages/gif-page/GifPage";
-
-export const backgroundColor = theme("theme", {
-  light: "#fff",
-  dark: "#2d2d2d",
-});
-
-export const textColor = theme("theme", {
-  light: "#000",
-  dark: "#fff",
-});
-
-const Container = styled.div`
-  font-family: sans-serif;
-  background-color: ${backgroundColor};
-  color: ${textColor};
-`;
 
 const App = (): JSX.Element => {
-  const theme = useAppSelector((state) => state.theme.theme);
   return (
-    <ThemeProvider theme={{ theme: theme }}>
-      <Container>
-        <GifPage />
-      </Container>
-    </ThemeProvider>
+    <BrowserRouter>
+      <Provider store={store}>
+        <StyledThemeProvider>
+          <Wrapper>
+            <PageRoute />
+          </Wrapper>
+        </StyledThemeProvider>
+      </Provider>
+    </BrowserRouter>
   );
 };
 

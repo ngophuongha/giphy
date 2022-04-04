@@ -1,14 +1,14 @@
 import InputGroup from "react-bootstrap/InputGroup";
-import FormControl from "react-bootstrap/FormControl";
+import { StyledFormControl, StyledSearchBtn } from "./TopSearch.styled";
 
 export const TopSearch = (): JSX.Element => {
   return (
     <InputGroup className="my-4">
-      <FormControl
+      <StyledFormControl
         placeholder="Search all the GIFs and Stickers"
         aria-label="gif-sticker-search"
       />
-      <InputGroup.Text id="basic-addon2">Search</InputGroup.Text>
+      <StyledSearchBtn id="search-btn">Search</StyledSearchBtn>
     </InputGroup>
   );
 };

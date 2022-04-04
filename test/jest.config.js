@@ -16,7 +16,7 @@ module.exports = {
 
   coverageThreshold: {
     global: {
-      branches: 70, //80% cannot be met since screen resizing should not be tested by unit testing, it should be integration testing instead
+      branches: 70,
       functions: 80,
       lines: 80,
       statements: 80,

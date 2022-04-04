@@ -1,9 +1,10 @@
 import { useState } from "react";
-import Card from "react-bootstrap/Card";
+
 import LazyLoad from "react-lazyload";
 import { LazyLoader } from "../../../components/loader";
 import { GifProps } from "./GifItem.type";
 import { GifFullscreen } from "../gif-fullscreen";
+import { StyledCard } from "./GifItem.styled";
 
 export const GifItem = ({
   id,
@@ -12,13 +13,12 @@ export const GifItem = ({
   title,
 }: GifProps): JSX.Element => {
   const [show, setShow] = useState(false);
-  const toggle = () => setShow(true);
-  const close = () => setShow(false);
+  const toggle = () => setShow(!show);
+
   return (
     <LazyLoad data-testid="lazy-load" placeholder={<LazyLoader />}>
-      <Card
+      <StyledCard
         id={id}
-        key={id}
         data-testid={1}
         className="border-0 overflow-hidden mt-2"
         onClick={toggle}
@@ -28,8 +28,13 @@ export const GifItem = ({
         <div className="card-img-overlay h-100 d-flex flex-column justify-content-end">
           <p className="card-text text-white">{username}</p>
         </div>
-      </Card>
-      <GifFullscreen open={show} setShow={close} imageUrl={imageSrc} />
+      </StyledCard>
+      <GifFullscreen
+        open={show}
+        setShow={toggle}
+        imageUrl={imageSrc}
+        imageAlt={title}
+      />
     </LazyLoad>
   );
 };

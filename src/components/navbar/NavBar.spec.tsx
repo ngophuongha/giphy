@@ -1,8 +1,8 @@
-import { render } from "@testing-library/react";
+import { render } from "../../../test";
 import { NavBar } from "./index";
 
-describe("Navbar", () => {
-  it("should render without crashing", () => {
+describe("Styled Navbar", () => {
+  it("should match snapshot", () => {
     const { container } = render(<NavBar />);
     expect(container).toMatchSnapshot();
   });

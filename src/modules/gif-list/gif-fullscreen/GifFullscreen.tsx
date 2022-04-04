@@ -5,6 +5,7 @@ export const GifFullscreen = ({
   open,
   setShow,
   imageUrl,
+  imageAlt = "gif-alt",
 }: GifFullscreenProps): JSX.Element => {
   return (
     <Modal
@@ -15,7 +16,7 @@ export const GifFullscreen = ({
       show={open}
       onHide={setShow}
     >
-      <img alt="img" src={imageUrl} />
+      <img alt={imageAlt} src={imageUrl} />
     </Modal>
   );
 };

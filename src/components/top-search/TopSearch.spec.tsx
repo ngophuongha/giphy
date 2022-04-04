@@ -1,8 +1,8 @@
-import { render } from "@testing-library/react";
+import { render } from "../../../test";
 import { TopSearch } from "./index";
 
 describe("Top Search", () => {
-  it("should render without crashing", () => {
+  it("should match snapshot", () => {
     const { container } = render(<TopSearch />);
     expect(container).toMatchSnapshot();
   });

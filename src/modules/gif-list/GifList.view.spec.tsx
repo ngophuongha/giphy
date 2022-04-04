@@ -1,14 +1,11 @@
 import { render } from "@testing-library/react";
 import { GifList } from "./GifList";
-import { mockGifPage } from "../../pages/gif-page";
+import { mockGifPage } from "./GifList.fixture";
 
-describe("Gif List", () => {
+describe("Gif List View", () => {
   it("should render without crashing with only mandatory props", () => {
-    const mockGifData = {
-      data: mockGifPage,
-    };
     const { container } = render(
-      <GifList onLoadMore={jest.fn} gifList={mockGifData} />
+      <GifList onLoadMore={jest.fn} gifList={mockGifPage} />
     );
     expect(container.firstChild).toMatchSnapshot();
   });

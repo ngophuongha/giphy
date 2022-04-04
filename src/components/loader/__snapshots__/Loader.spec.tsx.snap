@@ -1,16 +1,148 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Loader should render without crashing 1`] = `
+exports[`Loader should match snapshot 1`] = `
 <div>
   <div
-    class="spinner-grow text-primary"
-    role="status"
+    class="g-2 row row-cols-xl-4 row-cols-md-3 row-cols-2"
   >
-    <span
-      class="visually-hidden"
+    <div
+      class="col"
     >
-      Loading...
-    </span>
+      <div
+        class="mt-2 card"
+      >
+        <img
+          class="card-img-top"
+          src="placeholder-img.png"
+        />
+        <div
+          class="card-body"
+        >
+          <div
+            class="placeholder-glow card-title h5"
+          >
+            <span
+              class="col-6 placeholder"
+            />
+          </div>
+          <p
+            class="placeholder-glow card-text"
+          >
+            <span
+              class="col-7 placeholder"
+            />
+             
+            <span
+              class="col-4 placeholder"
+            />
+             
+            <span
+              class="col-4 placeholder"
+            />
+             
+            <span
+              class="col-6 placeholder"
+            />
+             
+            <span
+              class="col-8 placeholder"
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col"
+    >
+      <div
+        class="mt-2 card"
+      >
+        <img
+          class="card-img-top"
+          src="placeholder-img.png"
+        />
+        <div
+          class="card-body"
+        >
+          <div
+            class="placeholder-glow card-title h5"
+          >
+            <span
+              class="col-6 placeholder"
+            />
+          </div>
+          <p
+            class="placeholder-glow card-text"
+          >
+            <span
+              class="col-7 placeholder"
+            />
+             
+            <span
+              class="col-4 placeholder"
+            />
+             
+            <span
+              class="col-4 placeholder"
+            />
+             
+            <span
+              class="col-6 placeholder"
+            />
+             
+            <span
+              class="col-8 placeholder"
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col"
+    >
+      <div
+        class="mt-2 card"
+      >
+        <img
+          class="card-img-top"
+          src="placeholder-img.png"
+        />
+        <div
+          class="card-body"
+        >
+          <div
+            class="placeholder-glow card-title h5"
+          >
+            <span
+              class="col-6 placeholder"
+            />
+          </div>
+          <p
+            class="placeholder-glow card-text"
+          >
+            <span
+              class="col-7 placeholder"
+            />
+             
+            <span
+              class="col-4 placeholder"
+            />
+             
+            <span
+              class="col-4 placeholder"
+            />
+             
+            <span
+              class="col-6 placeholder"
+            />
+             
+            <span
+              class="col-8 placeholder"
+            />
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
