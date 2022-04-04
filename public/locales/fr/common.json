@@ -1,0 +1,17 @@
+{
+  "navbar": {
+    "reactions": "Réactions",
+    "entertainment": "Divertissement",
+    "signIn": "S'identifier"
+  },
+  "searchPlaceholder": "Rechercher tous les GIF et autocollants",
+  "searchBtn": "Rechercher",
+  "header": {
+    "trending": "GIF tendance"
+  },
+  "title": {
+    "trending": "GIF tendance"
+  },
+  "pageNotFound": "Page non trouvée",
+  "tryAgain": "Oups! Il semble y avoir un problème avec votre lien. Veuillez réessayer"
+}

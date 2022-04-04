@@ -34,6 +34,7 @@ export const ThemeToggler = (): JSX.Element => {
       }
       onColor={commonColors.toggleBackground}
       offColor={commonColors.toggleBackground}
+      className="ps-3"
     />
   );
 };

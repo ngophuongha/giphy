@@ -9,6 +9,9 @@ const lightColors = {
   borderColor: "#d3d3d3",
   hoverBackground: "#444444",
   hoverTextColor: "#ffffff",
+  primary: "#fff",
+  secondary: "#fff",
+  default: "#fff",
 };
 
 const light: DefaultTheme = {

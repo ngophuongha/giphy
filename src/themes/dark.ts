@@ -6,6 +6,9 @@ const darkColors = {
   borderColor: "#ffffff",
   hoverBackground: "#ffffff",
   hoverTextColor: "#444444",
+  primary: "#171717",
+  secondary: "#171717",
+  default: "#171717",
 };
 
 const dark: DefaultTheme = {

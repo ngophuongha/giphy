@@ -1,14 +1,16 @@
+import { useTranslation } from "react-i18next";
 import InputGroup from "react-bootstrap/InputGroup";
-import { StyledFormControl, StyledSearchBtn } from "./TopSearch.styled";
-
+import { StyledFormControl } from "./TopSearch.styled";
+import { StyledButton as Button } from "../button";
 export const TopSearch = (): JSX.Element => {
+  const { t } = useTranslation("common");
   return (
     <InputGroup className="my-4">
       <StyledFormControl
-        placeholder="Search all the GIFs and Stickers"
+        placeholder={t("searchPlaceholder")}
         aria-label="gif-sticker-search"
       />
-      <StyledSearchBtn id="search-btn">Search</StyledSearchBtn>
+      <Button id="search-btn" btnTitle={t("searchBtn")} />
     </InputGroup>
   );
 };

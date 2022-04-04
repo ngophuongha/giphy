@@ -6,6 +6,7 @@ import { store } from "./store/store";
 import { Wrapper } from "./components/wrapper";
 import { PageRoute } from "./pages/PageRoute";
 
+import "./i18n";
 import "./App.css";
 
 const App = (): JSX.Element => {

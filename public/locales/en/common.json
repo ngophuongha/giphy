@@ -1,0 +1,17 @@
+{
+  "navbar": {
+    "reactions": "Reactions",
+    "entertainment": "Entertainment",
+    "signIn": "Sign in"
+  },
+  "searchPlaceholder": "Search all the GIFs and Stickers",
+  "searchBtn": "Search",
+  "header": {
+    "trending": "Trending GIFs"
+  },
+  "title": {
+    "trending": "Trending GIFs"
+  },
+  "pageNotFound": "Page Not Found",
+  "tryAgain": "Oops! There seems to be something wrong with your link. Please try again"
+}
