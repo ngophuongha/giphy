@@ -5,6 +5,7 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 import { ThemeToggler } from "../theme-toggler";
 import { StyledNav } from "./NavBar.styled";
 import { LanguageSelector } from "../language-selector";
+import { routesConstants } from "../../pages/routes.constant";
 
 export const NavBar = (): JSX.Element => {
   const { t } = useTranslation("common");
@@ -36,7 +37,9 @@ export const NavBar = (): JSX.Element => {
             <Nav className="flex-row align-items-center">
               <LanguageSelector />
               <ThemeToggler />
-              <StyledNav href="#">{t("navbar.signIn")}</StyledNav>
+              <StyledNav href={routesConstants.auth.signIn}>
+                {t("navbar.signIn")}
+              </StyledNav>
             </Nav>
           </Navbar.Collapse>
         </Container>

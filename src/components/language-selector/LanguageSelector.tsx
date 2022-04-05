@@ -51,7 +51,7 @@ export const LanguageSelector = (): JSX.Element => {
             )}
           </Col>
 
-          <Col>French</Col>
+          <Col>Français</Col>
         </StyledDropdownItem>
       </StyledDropdownMenu>
     </Dropdown>

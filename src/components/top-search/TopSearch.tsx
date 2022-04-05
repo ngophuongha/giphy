@@ -10,7 +10,7 @@ export const TopSearch = (): JSX.Element => {
         placeholder={t("searchPlaceholder")}
         aria-label="gif-sticker-search"
       />
-      <Button id="search-btn" btnTitle={t("searchBtn")} />
+      <Button id="search-btn" btnTitle={t("searchBtn")} outlined />
     </InputGroup>
   );
 };

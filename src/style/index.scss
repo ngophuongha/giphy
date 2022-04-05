@@ -1,0 +1,10 @@
+@import "./custom-bootstrap.scss";
+
+:root {
+  --bs-body-font-family: #{$font-family-base};
+  --bs-font-sans-serif: #{$font-family-base};
+  --bs-secondary: #a1343e;
+  --bs-secondary-rgb: 161, 52, 62;
+  --bs-primary: #2b5dab;
+  --bs-primary-rgb: 43, 93, 171;
+}

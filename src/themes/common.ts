@@ -12,10 +12,13 @@ const screens = {
 const commonColors = {
   transparent: "transparent",
   light: "#fff",
-  dark: "#171717",
+  dark: "#1b1c1c",
   toggleBackground: "#444444",
   toggleIcon: "#ffa701",
-  primary: "#444444",
+  primary: "#2b5dab",
+  secondary: "a1343e",
+  brickRed: "#a1343e",
+  coralBlue: "#2b5dab",
 };
 
 const common: DefaultTheme = {

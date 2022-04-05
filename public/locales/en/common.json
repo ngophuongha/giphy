@@ -13,5 +13,18 @@
     "trending": "Trending GIFs"
   },
   "pageNotFound": "Page Not Found",
-  "tryAgain": "Oops! There seems to be something wrong with your link. Please try again"
+  "tryAgain": "Oops! There seems to be something wrong with your link. Please try again",
+  "auth": {
+    "header": {
+      "signIn": "Sign In"
+    },
+    "placeholder": {
+      "email": "Enter your email",
+      "password": "Enter your password"
+    },
+    "signInBtn": "Sign In",
+    "notRegistered": "Not registered?",
+    "createNewAccount": "Create new account.",
+    "rememberMe": "Remember Me?"
+  }
 }

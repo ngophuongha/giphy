@@ -13,5 +13,18 @@
     "trending": "GIF tendance"
   },
   "pageNotFound": "Page non trouvée",
-  "tryAgain": "Oups! Il semble y avoir un problème avec votre lien. Veuillez réessayer"
+  "tryAgain": "Oups! Il semble y avoir un problème avec votre lien. Veuillez réessayer",
+  "auth": {
+    "header": {
+      "signIn": "S'identifier"
+    },
+    "placeholder": {
+      "email": "E-mail",
+      "password": "Mot de passe"
+    },
+    "signInBtn": "S'identifier",
+    "notRegistered": "Non enregistré?",
+    "createNewAccount": "Créer un nouveau compte.",
+    "rememberMe": "Souviens-toi de moi?"
+  }
 }

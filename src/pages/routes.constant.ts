@@ -1,6 +1,11 @@
 export const routesConstants = {
   root: "/",
   trending: "/trending",
-  signIn: "/sign-in",
+  auth: {
+    root: "/auth",
+    signIn: "/sign-in",
+    register: "/register",
+  },
+
   notFound: "/404",
 };
