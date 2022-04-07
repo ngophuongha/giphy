@@ -5,9 +5,11 @@
     "node": true
   },
   "extends": [
+    "react-app",
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -18,12 +20,6 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint"],
-  "settings": {
-    "react": {
-      "pragma": "React",
-      "version": "17.0.2"
-    }
-  },
   "rules": {
     "no-console": "warn",
     "react/prop-types": ["off"],
