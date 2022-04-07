@@ -19,12 +19,17 @@
       "signIn": "S'identifier"
     },
     "placeholder": {
-      "email": "E-mail",
-      "password": "Mot de passe"
+      "email": "Entrer votre Email",
+      "password": "Tapez votre mot de passe",
+      "enterCode": "Entrez votre code"
     },
     "signInBtn": "S'identifier",
     "notRegistered": "Non enregistré?",
     "createNewAccount": "Créer un nouveau compte.",
-    "rememberMe": "Souviens-toi de moi?"
+    "rememberMe": "Souviens-toi de moi?",
+    "verify2fa": "Vérifiez qu'il s'agit bien de vous en procédant comme suit:",
+    "text": "Texte +XX XXXXXX123",
+    "call": "Appeler +XX XXXXXX123",
+    "enterCode": "Veuillez saisir le code envoyé sur votre téléphone"
   }
 }

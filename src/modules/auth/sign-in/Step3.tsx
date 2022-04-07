@@ -1,27 +1,42 @@
-import { Col, Row, Form, InputGroup } from "react-bootstrap";
+import { Form, InputGroup } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLock, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
+import { useAppDispatch } from "../../../store/hooks";
 import { StyledButton as Button } from "../../../components/button";
 import { routesConstants } from "../../../pages/routes.constant";
 import { SignInStepProps } from "./SignIn.form.type";
-import { commonColors } from "../../../themes";
 
-const Step3 = ({
+import { StyledSignInStep } from "./SignIn.form.styled";
+import { setAuth } from "../../../store/auth/auth";
+export const Step3 = ({
   onSuccess,
 }: //   onFailed,
 SignInStepProps): JSX.Element => {
   const { t } = useTranslation("common");
+  const dispatch = useAppDispatch();
+  const navigate = useNavigate();
+
+  const setAuthInfo = async () => {
+    await dispatch(
+      setAuth({
+        name: "Ha Ngo Phuong",
+        avatar: "",
+      })
+    );
+    navigate(routesConstants.root);
+  };
+
   return (
-    <motion.div
-      initial={{ x: "-100vw" }}
-      animate={{ x: 0 }}
+    <StyledSignInStep
+      initial={{ x: "-500px" }}
+      animate={{ translateX: "500px" }}
       transition={{ stiffness: 150 }}
     >
       <h6 className="d-flex justify-content-center fw-normal mb-3 mt-2">
-        Please enter the code sent to your phone.
+        {t("auth.enterCode")}
       </h6>
       <Form>
         <InputGroup className="my-3">
@@ -30,7 +45,7 @@ SignInStepProps): JSX.Element => {
           </InputGroup.Text>
           <Form.Control
             name="password"
-            placeholder="Enter your code"
+            placeholder={t("auth.placeholder.enterCode")}
             type="password"
           />
         </InputGroup>
@@ -39,7 +54,7 @@ SignInStepProps): JSX.Element => {
             variant="primary"
             btnTitle={t("auth.signInBtn")}
             type="button"
-            onClick={onSuccess}
+            onClick={setAuthInfo}
           />
         </div>
         <div className="d-flex justify-content-center mt-2">
@@ -51,8 +66,6 @@ SignInStepProps): JSX.Element => {
           </Form.Text>
         </div>
       </Form>
-    </motion.div>
+    </StyledSignInStep>
   );
 };
-
-export default Step3;

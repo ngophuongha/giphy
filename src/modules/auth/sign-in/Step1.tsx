@@ -6,15 +6,21 @@ import { useTranslation } from "react-i18next";
 import { StyledButton as Button } from "../../../components/button";
 import { routesConstants } from "../../../pages/routes.constant";
 import { SignInStepProps } from "./SignIn.form.type";
+import { StyledSignInStep } from "./SignIn.form.styled";
 
 export const Step1 = ({
   onSuccess,
 }: //   onFailed,
 SignInStepProps): JSX.Element => {
   const { t } = useTranslation("common");
+
   return (
-    <div className="mt-3">
-      <Form>
+    <StyledSignInStep
+      initial={{ x: "-500px" }}
+      animate={{ translateX: "500px" }}
+      transition={{ stiffness: 150 }}
+    >
+      <Form className="pt-3">
         <InputGroup className="mb-4">
           <InputGroup.Text>
             <FontAwesomeIcon icon={faUser} />
@@ -53,7 +59,7 @@ SignInStepProps): JSX.Element => {
             onClick={onSuccess}
           />
         </div>
-        <div className="d-flex justify-content-center mt-2">
+        <div className="d-flex justify-content-center mt-2 mb-2">
           <Form.Text>
             {t("auth.notRegistered")}{" "}
             <a href={routesConstants.auth.register}>
@@ -62,6 +68,6 @@ SignInStepProps): JSX.Element => {
           </Form.Text>
         </div>
       </Form>
-    </div>
+    </StyledSignInStep>
   );
 };

@@ -12,7 +12,6 @@ export const AuthFormWrapper = styled(Wrapper)`
     ${commonColors.brickRed},
     ${commonColors.coralBlue}
   );
-
   .form-container {
     height: 70%;
     width: 100%;

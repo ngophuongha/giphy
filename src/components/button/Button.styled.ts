@@ -34,6 +34,7 @@ export const StyledButton = styled(Button)`
 
   &:hover {
     background-color: ${(props) => {
+      if (props.outlined) return props.theme.colors.hoverBackground;
       switch (props.variant) {
         case "primary":
           return props.theme.colors.hoverPrimary;
@@ -43,5 +44,7 @@ export const StyledButton = styled(Button)`
           return props.theme.colors.hoverDefault;
       }
     }};
+    color: ${(props) =>
+      props.outlined ? props.theme.colors.hoverTextColor : commonColors.light};
   }
 `;

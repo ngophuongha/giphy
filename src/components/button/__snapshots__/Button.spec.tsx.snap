@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Styled Button should match snapshot 1`] = `
+.c0 {
+  padding: 0.25rem !important;
+  border-radius: 0.25rem;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #fff;
+}
+
+.c0:hover {
+  background-color: #1b1c1c;
+  color: #fff;
+}
+
+<div>
+  <button
+    class="c0"
+    role="button"
+  >
+    Default Btn
+  </button>
+</div>
+`;

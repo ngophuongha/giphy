@@ -12,13 +12,14 @@ import {
 } from "redux-persist";
 import theme from "./theme/theme";
 import language from "./language/language";
+import auth from "./auth/auth";
 
 const persistConfig = {
   key: "persist",
   storage,
 };
 
-const reducers = combineReducers({ theme, language });
+const reducers = combineReducers({ theme, language, auth });
 
 const persistedReducer = persistReducer(persistConfig, reducers);
 

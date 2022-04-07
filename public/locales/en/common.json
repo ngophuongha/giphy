@@ -20,11 +20,16 @@
     },
     "placeholder": {
       "email": "Enter your email",
-      "password": "Enter your password"
+      "password": "Enter your password",
+      "enterCode": "Enter your code"
     },
     "signInBtn": "Sign In",
     "notRegistered": "Not registered?",
     "createNewAccount": "Create new account.",
-    "rememberMe": "Remember Me?"
+    "rememberMe": "Remember Me?",
+    "verify2fa": "Verify it's you by one of the following:",
+    "text": "Text +XX XXXXXX123",
+    "call": "Call +XX XXXXXX123",
+    "enterCode": "Please enter the code sent to your phone"
   }
 }
