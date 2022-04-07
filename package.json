@@ -56,7 +56,7 @@
     "eject": "react-scripts eject",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "lint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
-    "heroku-prebuild": "npm install --include dev",
+    "heroku-prebuild": "npm run build",
     "prepare": "husky install",
     "pre-commit": "lint-staged"
   },
