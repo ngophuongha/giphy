@@ -53,7 +53,7 @@
     "test:ci": "cross-env CI=true jest -c test/jest.config.js --collectCoverage --ci  --updateSnapshot --testTimeout=45000",
     "eject": "react-scripts eject",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "heroku-prebuild": "npm install"
+    "heroku-prebuild": "npm install --include dev"
   },
   "eslintConfig": {
     "extends": [
