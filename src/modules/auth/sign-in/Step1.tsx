@@ -20,7 +20,7 @@ SignInStepProps): JSX.Element => {
       animate={{ translateX: "500px" }}
       transition={{ stiffness: 150 }}
     >
-      <Form className="pt-3">
+      <Form className="pt-3 px-1">
         <InputGroup className="mb-4">
           <InputGroup.Text>
             <FontAwesomeIcon icon={faUser} />
