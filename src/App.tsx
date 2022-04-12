@@ -5,7 +5,6 @@ import persistStore from "redux-persist/es/persistStore";
 import { BrowserRouter } from "react-router-dom";
 
 import { store } from "./store/store";
-
 import { PageRoute } from "./pages/PageRoute";
 
 import "./i18n";
