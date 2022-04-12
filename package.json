@@ -1,9 +1,6 @@
 {
   "name": "messagemedia-assignment",
   "version": "0.1.0",
-  "engines": {
-    "node": "14.17.0"
-  },
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -58,6 +55,12 @@
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "heroku-prebuild": "npm run build",
     "prepare": "husky install"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
