@@ -11,8 +11,11 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "@types/react": "^17.0.43",
+    "@types/react-helmet": "^6.1.5",
     "@types/react-infinite-scroller": "^1.2.2",
     "@types/react-lazyload": "^3.1.1",
+    "@types/styled-components": "^5.1.25",
+    "@types/styled-theming": "^2.2.5",
     "axios": "^0.21.4",
     "bootstrap": "^5.1.0",
     "classnames": "^2.3.1",
@@ -53,7 +56,7 @@
     "test:ci": "cross-env CI=true jest -c test/jest.config.js --collectCoverage --ci  --updateSnapshot --testTimeout=45000",
     "eject": "react-scripts eject",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install  --production=false"
+    "heroku-prebuild": "npm install"
   },
   "eslintConfig": {
     "extends": [
@@ -75,9 +78,6 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.15.6",
-    "@types/react-helmet": "^6.1.5",
-    "@types/styled-components": "^5.1.25",
-    "@types/styled-theming": "^2.2.5",
     "babel-jest": "^27.2.0",
     "prettier": "^2.4.0"
   }
