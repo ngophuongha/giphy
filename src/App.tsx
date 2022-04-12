@@ -20,9 +20,7 @@ const App = (): JSX.Element => {
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <StyledThemeProvider>
-            <Wrapper>
-              <PageRoute />
-            </Wrapper>
+            <PageRoute />
           </StyledThemeProvider>
         </PersistGate>
       </Provider>
