@@ -53,8 +53,7 @@
     "test:ci": "cross-env CI=true jest -c test/jest.config.js --collectCoverage --ci  --updateSnapshot --testTimeout=45000",
     "eject": "react-scripts eject",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "heroku-prebuild": "npm install",
-    "prepare": "husky install"
+    "heroku-prebuild": "npm install"
   },
   "eslintConfig": {
     "extends": [
@@ -80,7 +79,6 @@
     "@types/styled-components": "^5.1.22",
     "@types/styled-theming": "^2.2.5",
     "babel-jest": "^27.2.0",
-    "husky": "^7.0.4",
     "prettier": "^2.4.0"
   }
 }
