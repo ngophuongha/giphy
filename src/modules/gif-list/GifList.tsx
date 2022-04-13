@@ -63,6 +63,7 @@ export const GifList = ({
         </Row>
       </InfiniteScroll>
     );
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gifList]);
 
   return renderredData;

@@ -21,6 +21,7 @@ export const GifListView = (): JSX.Element => {
 
   useEffect(() => {
     fetchData();
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [offset]);
 
   const onLoadMore = () => {

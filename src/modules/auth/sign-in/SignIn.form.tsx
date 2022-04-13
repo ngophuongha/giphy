@@ -39,6 +39,7 @@ export const SignIn = (): JSX.Element => {
           <Step1 onSuccess={() => setStep(2)} onFailed={() => setStep(2)} />
         );
     }
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [step]);
   return (
     <StyledSignInContainer>

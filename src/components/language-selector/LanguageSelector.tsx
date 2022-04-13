@@ -21,6 +21,7 @@ export const LanguageSelector = (): JSX.Element => {
       dispatch(languageChange(lang));
       i18n.changeLanguage(lang);
     },
+    //eslint-disable-next-line react-hooks/exhaustive-deps
     [currentLanguage]
   );
 
