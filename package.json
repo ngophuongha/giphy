@@ -49,14 +49,15 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:dev": "NODE_ENV=production env-cmd -f .env.development --no-override npm run build",
+    "build:prod": "env-cmd -f .env.production npm run build",
     "test": "jest -c test/jest.config.js",
     "test:watch": "jest --watch -c test/jest.config.js",
     "test:coverage": "jest -c test/jest.config.js --collectCoverage --verbose",
     "test:update": "jest -c test/jest.config.js --collectCoverage --verbose --updateSnapshot",
     "test:ci": "cross-env CI=true jest -c test/jest.config.js --collectCoverage --ci  --updateSnapshot --testTimeout=45000",
     "eject": "react-scripts eject",
-    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "heroku-prebuild": "npm run build"
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
   "eslintConfig": {
     "extends": [
