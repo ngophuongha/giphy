@@ -47,8 +47,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "set NODE_ENV=dev react-scripts start",
-    "build": "NODE_ENV=production react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "build:dev": "NODE_ENV=production env-cmd -f .env.development --no-override npm run build",
     "build:prod": "env-cmd -f .env.production npm run build",
     "test": "jest -c test/jest.config.js",
