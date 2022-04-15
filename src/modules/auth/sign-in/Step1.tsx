@@ -55,7 +55,7 @@ SignInStepProps): JSX.Element => {
           <Button
             variant="primary"
             btnTitle={t("auth.signInBtn")}
-            type="button"
+            type="submit"
             onClick={onSuccess}
           />
         </div>
