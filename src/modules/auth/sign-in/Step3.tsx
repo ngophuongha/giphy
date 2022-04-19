@@ -2,7 +2,6 @@ import { Form, InputGroup } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
 
 import { useAppDispatch } from "../../../store/hooks";
 import { StyledButton as Button } from "../../../components/button";
@@ -17,7 +16,6 @@ export const Step3 = ({
 SignInStepProps): JSX.Element => {
   const { t } = useTranslation("common");
   const dispatch = useAppDispatch();
-  const navigate = useNavigate();
 
   const setAuthInfo = async () => {
     await dispatch(
@@ -26,7 +24,7 @@ SignInStepProps): JSX.Element => {
         avatar: "",
       })
     );
-    navigate(routesConstants.root);
+    onSuccess();
   };
 
   return (

@@ -7,9 +7,16 @@ exports[`Top Search should match snapshot 1`] = `
 }
 
 .c1 {
-  background-color: #fff !important;
-  color: #000000 !important;
-  border-color: #d3d3d3 !important;
+  padding: 0.25rem !important;
+  border-radius: 0.25rem;
+  border: 1px solid #d3d3d3;
+  color: #000000;
+  background-color: #fff;
+}
+
+.c1:hover {
+  background-color: #444444;
+  color: #ffffff;
 }
 
 <div>
@@ -19,14 +26,13 @@ exports[`Top Search should match snapshot 1`] = `
     <input
       aria-label="gif-sticker-search"
       class="c0 form-control"
-      placeholder="Search all the GIFs and Stickers"
+      placeholder="searchPlaceholder"
     />
     <button
-      class="c1 btn btn-primary"
+      class="c1"
       id="search-btn"
-      type="button"
     >
-      Search
+      searchBtn
     </button>
   </div>
 </div>

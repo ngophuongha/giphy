@@ -17,7 +17,6 @@ exports[`Styled Button should match snapshot 1`] = `
 <div>
   <button
     class="c0"
-    role="button"
   >
     Default Btn
   </button>

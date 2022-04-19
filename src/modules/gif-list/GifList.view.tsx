@@ -12,7 +12,6 @@ export const GifListView = (): JSX.Element => {
   const fetchData = useCallback(async () => {
     try {
       const response = await getGifItems(offset);
-      // console.log("offset, response: ", offset, response);
       setData((prev) => [...prev, ...response]);
     } catch (error) {
       setHasMore(false);

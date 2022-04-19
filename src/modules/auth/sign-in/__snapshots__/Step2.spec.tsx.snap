@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sign In: Step 2 should match snapshot 1`] = `
+.c0 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+<div>
+  <div
+    class="c0"
+    style="transform: translateX(-500px) translateZ(0);"
+  >
+    <h6
+      class="d-flex justify-content-center fw-normal mb-3 mt-2"
+    >
+      auth.verify2fa
+    </h6>
+    <div
+      class="d-grid gap-2 list-group"
+    >
+      <button
+        class="p-3 d-flex flex-row list-group-item list-group-item-primary list-group-item-action"
+      >
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-comment fa-w-16 "
+          data-icon="comment"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"
+            fill="currentColor"
+          />
+        </svg>
+        <span
+          class="ps-3"
+        >
+          auth.text
+        </span>
+      </button>
+      <button
+        class="p-3 d-flex flex-row list-group-item list-group-item-primary list-group-item-action"
+      >
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-phone fa-w-16 "
+          data-icon="phone"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
+            fill="currentColor"
+          />
+        </svg>
+        <span
+          class="ps-3"
+        >
+          auth.call
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

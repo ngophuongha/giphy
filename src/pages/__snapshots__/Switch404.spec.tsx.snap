@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch404 Page should match snapshot 1`] = `
+.c5 {
+  color: #000000;
+}
+
+.c1 {
+  color: #000000;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+.c1:hover {
+  color: #000000;
+}
+
+.c2.c2.c2 {
+  background-color: #fff;
+  color: #000000;
+  border: #000000;
+}
+
+.c3 {
+  background-color: #fff !important;
+  color: #000000 !important;
+}
+
+.c4 {
+  padding: 0.25rem !important;
+  border-radius: 0.25rem;
+  border: 1px solid #d3d3d3;
+  color: #000000;
+  background-color: #fff;
+}
+
+.c4:hover {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.c0 {
+  background-color: #fff;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width:1024px) {
+  .c1 a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="container container"
+    >
+      <nav
+        class="border-bottom navbar navbar-expand-lg navbar-light"
+      >
+        <div
+          class="container"
+        >
+          <a
+            class="c1"
+            href="/"
+          >
+            <img
+              alt=""
+              class="d-inline-block align-top"
+              height="30"
+              src="/giphy-logo-1.svg"
+              width="30"
+            />
+             
+            GIPHY
+          </a>
+          <button
+            aria-controls="responsive-navbar-nav"
+            aria-label="Toggle navigation"
+            class="navbar-toggler collapsed"
+            type="button"
+          >
+            <span
+              class="navbar-toggler-icon"
+            />
+          </button>
+          <div
+            class="navbar-collapse collapse"
+            id="responsive-navbar-nav"
+          >
+            <div
+              class="me-auto navbar-nav"
+            >
+              <a
+                class="c1"
+                href="#"
+              >
+                navbar.reactions
+              </a>
+              <a
+                class="c1"
+                href="#"
+              >
+                navbar.entertainment
+              </a>
+            </div>
+            <div
+              class="flex-row align-items-center navbar-nav"
+            >
+              <div
+                class="dropdown"
+              >
+                <button
+                  aria-expanded="false"
+                  class="c2 d-flex align-items-center btn-primary dropdown-toggle btn btn-primary"
+                  id="language-selector"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="svg-inline--fa fa-language fa-w-20 "
+                    data-icon="language"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style="width: 1.5rem; height: 1.5rem;"
+                    viewBox="0 0 640 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="ps-3"
+                style="position: relative; display: inline-block; text-align: left; opacity: 1; direction: ltr; border-radius: 12.5px; transition: opacity 0.25s; user-select: none;"
+              >
+                <div
+                  class="react-switch-bg"
+                  style="height: 25px; width: 56px; margin: 0px; position: relative; background: rgb(68, 68, 68); border-radius: 12.5px; cursor: pointer; transition: background 0.25s;"
+                >
+                  <div
+                    style="height: 25px; width: 33px; position: relative; opacity: 1; pointer-events: none; transition: opacity 0.25s;"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-sun fa-w-16 h-100 w-100 p-1"
+                      color="#ffa701"
+                      data-icon="sun"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    style="height: 25px; width: 33px; position: absolute; opacity: 0; right: 0px; top: 0px; pointer-events: none; transition: opacity 0.25s;"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-moon fa-w-16 h-100 w-100 p-1"
+                      color="#ffa701"
+                      data-icon="moon"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="react-switch-handle"
+                  style="height: 23px; width: 23px; background: rgb(255, 255, 255); display: inline-block; cursor: pointer; border-radius: 50%; position: absolute; transform: translateX(32px); top: 1px; outline: 0; border: 0px; transition: background-color 0.25s, transform 0.25s, box-shadow 0.15s;"
+                />
+                <input
+                  aria-checked="true"
+                  checked=""
+                  role="switch"
+                  style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;"
+                  type="checkbox"
+                />
+              </div>
+              <a
+                class="c1"
+                href="/sign-in"
+              >
+                navbar.signIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="my-4 input-group"
+      >
+        <input
+          aria-label="gif-sticker-search"
+          class="c3 form-control"
+          placeholder="searchPlaceholder"
+        />
+        <button
+          class="c4"
+          id="search-btn"
+        >
+          searchBtn
+        </button>
+      </div>
+      <div
+        class="page-404"
+      >
+        <header
+          class="c5 d-flex flex-column"
+        >
+          <h3
+            class="header-404"
+          >
+            pageNotFound
+          </h3>
+          <h4
+            class="sub-header-404"
+          >
+            tryAgain
+          </h4>
+        </header>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -15,7 +15,7 @@ describe("Get Gif Service", () => {
       data: mockGifPage,
     });
     const res = await getGifItems(20);
-    expect(res).toEqual({ data: mockGifPage });
+    expect(res).toEqual(mockGifPage);
   });
 
   it("should return Error when API fetching fails", async () => {

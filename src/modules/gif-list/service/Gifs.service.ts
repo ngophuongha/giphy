@@ -1,9 +1,11 @@
-import { GifRequestProps } from "./Gifs.service.type";
+import { GifsResponseProps } from "./Gifs.service.type";
 import * as apiConstants from "../../../api/api.constants";
 import apiWrapper from "../../../api/api.wrapper";
 import { LIMIT_ITEMS } from "../../../constants/variables";
 
-export const getGifItems: GifRequestProps = async (offset: number) => {
+export const getGifItems = async (
+  offset: number
+): Promise<GifsResponseProps[]> => {
   try {
     const response = await apiWrapper({
       url: `${apiConstants.TRENDING_API_ENDPOINT}`,

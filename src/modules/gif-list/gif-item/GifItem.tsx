@@ -19,7 +19,7 @@ export const GifItem = ({
     <LazyLoad data-testid="lazy-load" placeholder={<LazyLoader />}>
       <StyledCard
         id={id}
-        data-testid={1}
+        data-testid={id}
         className="border-0 overflow-hidden mt-2"
         onClick={toggle}
         style={{ cursor: "pointer" }}

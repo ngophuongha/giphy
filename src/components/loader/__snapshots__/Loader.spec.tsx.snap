@@ -146,3 +146,21 @@ exports[`Loader should match snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`Suspender should match snapshot 1`] = `
+.c0 {
+  background-color: #fff;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="spinner-grow"
+    />
+  </div>
+</div>
+`;

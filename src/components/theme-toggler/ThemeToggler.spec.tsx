@@ -1,12 +1,5 @@
 import { render, screen, fireEvent, waitFor } from "../../../test";
 import { ThemeToggler } from "./ThemeToggler";
-import * as hooks from "../../store/hooks";
-
-jest.mock("../../store/hooks", () => ({
-  ...jest.requireActual("../../store/hooks"),
-  useAppDispatch: jest.fn().mockReturnValue(jest.fn()),
-  useAppSelector: jest.fn(),
-}));
 
 describe("Theme Toggler", () => {
   beforeEach(() => {
@@ -18,10 +11,16 @@ describe("Theme Toggler", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("should trigger dispatch when clicking on toggler", async () => {
+  it("should change theme correctly", async () => {
     render(<ThemeToggler />);
     const switchBtn = screen.getByRole("switch");
     fireEvent.click(switchBtn);
-    await waitFor(() => expect(hooks.useAppDispatch).toHaveBeenCalled());
+    await waitFor(() => {
+      expect(switchBtn).not.toBeChecked();
+    });
+    fireEvent.click(switchBtn);
+    await waitFor(() => {
+      expect(switchBtn).toBeChecked();
+    });
   });
 });

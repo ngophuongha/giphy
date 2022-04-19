@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render } from "../test";
 import App from "./App";
 
 describe("Index Page", () => {

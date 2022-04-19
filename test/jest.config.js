@@ -1,4 +1,4 @@
-/** @type {import('@ts-jest/dist/types').InitialOptionsTsJest} */
+/** @type {import("@ts-jest/dist/types").InitialOptionsTsJest} */
 module.exports = {
   rootDir: "../",
   moduleDirectories: ["node_modules", "src"],
@@ -16,7 +16,7 @@ module.exports = {
 
   coverageThreshold: {
     global: {
-      branches: 70,
+      branches: 80,
       functions: 80,
       lines: 80,
       statements: 80,

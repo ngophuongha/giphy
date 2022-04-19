@@ -27,7 +27,10 @@ export const LanguageSelector = (): JSX.Element => {
 
   return (
     <Dropdown>
-      <StyledToggler className="d-flex align-items-center">
+      <StyledToggler
+        className="d-flex align-items-center"
+        id="language-selector"
+      >
         <FontAwesomeIcon
           icon={faLanguage}
           style={{

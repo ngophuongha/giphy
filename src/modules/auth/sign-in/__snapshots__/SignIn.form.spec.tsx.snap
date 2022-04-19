@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sign In Form should match snapshot 1`] = `
+.c1 {
+  color: #000000;
+}
+
+.c2 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.c0 {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.c3 {
+  padding: 0.25rem !important;
+  border-radius: 0.25rem;
+  border: 1px solid #2b5dab;
+  color: #fff;
+  background-color: #2b5dab;
+}
+
+.c3:hover {
+  background-color: #25539c;
+  color: #fff;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <header
+      class="c1 d-flex justify-content-center"
+    >
+      <h4
+        class="text-uppercase text-primary"
+      >
+        auth.header.signIn
+      </h4>
+    </header>
+    <div
+      class="c2"
+      style="transform: translateX(-500px) translateZ(0);"
+    >
+      <form
+        class="pt-3 px-1"
+      >
+        <div
+          class="mb-4 input-group"
+        >
+          <span
+            class="input-group-text"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-user fa-w-14 "
+              data-icon="user"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          <input
+            class="form-control"
+            name="email"
+            placeholder="auth.placeholder.email"
+          />
+        </div>
+        <div
+          class="mb-2 input-group"
+        >
+          <span
+            class="input-group-text"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-lock fa-w-14 "
+              data-icon="lock"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          <input
+            class="form-control"
+            name="password"
+            placeholder="auth.placeholder.password"
+            type="password"
+          />
+        </div>
+        <div
+          class="mb-3 row"
+        >
+          <div
+            class="align-self-start col"
+          >
+            <small
+              class="form-text"
+            >
+              <div
+                class="form-check"
+              >
+                <input
+                  class="form-check-input"
+                  id="remember"
+                  type="checkbox"
+                />
+                <label
+                  class="form-check-label"
+                  for="remember"
+                  title=""
+                >
+                  auth.rememberMe
+                </label>
+              </div>
+            </small>
+          </div>
+        </div>
+        <div
+          class="d-grid"
+        >
+          <button
+            class="c3"
+            type="submit"
+            variant="primary"
+          >
+            auth.signInBtn
+          </button>
+        </div>
+        <div
+          class="d-flex justify-content-center mt-2 mb-2"
+        >
+          <small
+            class="form-text"
+          >
+            auth.notRegistered
+             
+            <a
+              href="/register"
+            >
+              auth.createNewAccount
+            </a>
+          </small>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;

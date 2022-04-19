@@ -1,7 +1,6 @@
 import { StyledThemeProvider } from "./themes";
-import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/lib/integration/react";
-import persistStore from "redux-persist/es/persistStore";
+import persistStore from "redux-persist/lib/persistStore";
 import { BrowserRouter } from "react-router-dom";
 
 import { store } from "./store/store";
@@ -16,13 +15,11 @@ const persistor = persistStore(store);
 const App = (): JSX.Element => {
   return (
     <BrowserRouter>
-      <Provider store={store}>
-        <PersistGate persistor={persistor}>
-          <StyledThemeProvider>
-            <PageRoute />
-          </StyledThemeProvider>
-        </PersistGate>
-      </Provider>
+      <PersistGate persistor={persistor}>
+        <StyledThemeProvider>
+          <PageRoute />
+        </StyledThemeProvider>
+      </PersistGate>
     </BrowserRouter>
   );
 };

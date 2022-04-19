@@ -3,6 +3,7 @@
 exports[`Theme Toggler should match snapshot 1`] = `
 <div>
   <div
+    class="ps-3"
     style="position: relative; display: inline-block; text-align: left; opacity: 1; direction: ltr; border-radius: 12.5px; transition: opacity 0.25s; user-select: none;"
   >
     <div
@@ -10,7 +11,7 @@ exports[`Theme Toggler should match snapshot 1`] = `
       style="height: 25px; width: 56px; margin: 0px; position: relative; background: rgb(68, 68, 68); border-radius: 12.5px; cursor: pointer; transition: background 0.25s;"
     >
       <div
-        style="height: 25px; width: 33px; position: relative; opacity: 0; pointer-events: none; transition: opacity 0.25s;"
+        style="height: 25px; width: 33px; position: relative; opacity: 1; pointer-events: none; transition: opacity 0.25s;"
       >
         <svg
           aria-hidden="true"
@@ -30,7 +31,7 @@ exports[`Theme Toggler should match snapshot 1`] = `
         </svg>
       </div>
       <div
-        style="height: 25px; width: 33px; position: absolute; opacity: 1; right: 0px; top: 0px; pointer-events: none; transition: opacity 0.25s;"
+        style="height: 25px; width: 33px; position: absolute; opacity: 0; right: 0px; top: 0px; pointer-events: none; transition: opacity 0.25s;"
       >
         <svg
           aria-hidden="true"
@@ -52,10 +53,11 @@ exports[`Theme Toggler should match snapshot 1`] = `
     </div>
     <div
       class="react-switch-handle"
-      style="height: 23px; width: 23px; background: rgb(255, 255, 255); display: inline-block; cursor: pointer; border-radius: 50%; position: absolute; transform: translateX(1px); top: 1px; outline: 0; border: 0px; transition: background-color 0.25s, transform 0.25s, box-shadow 0.15s;"
+      style="height: 23px; width: 23px; background: rgb(255, 255, 255); display: inline-block; cursor: pointer; border-radius: 50%; position: absolute; transform: translateX(32px); top: 1px; outline: 0; border: 0px; transition: background-color 0.25s, transform 0.25s, box-shadow 0.15s;"
     />
     <input
-      aria-checked="false"
+      aria-checked="true"
+      checked=""
       role="switch"
       style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;"
       type="checkbox"
