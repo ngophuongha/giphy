@@ -7,7 +7,7 @@ export const getGifItems = async (
   offset: number
 ): Promise<GifsResponseProps[]> => {
   try {
-    const response = await apiWrapper({
+    const response = await apiWrapper<{ data: GifsResponseProps[] }>({
       url: `${apiConstants.TRENDING_API_ENDPOINT}`,
       params: {
         api_key: process.env.REACT_APP_API_KEY,

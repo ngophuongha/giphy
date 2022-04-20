@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import { NavBar } from "../../components/navbar";
-import { TopSearch } from "../../components/top-search";
+import { TopSearch } from "../../modules/top-search/TopSearch";
 import { Wrapper } from "../../components/wrapper";
 
 import styles from "./PrimaryLayout.module.scss";

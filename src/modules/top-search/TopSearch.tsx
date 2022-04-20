@@ -4,8 +4,12 @@ import debounce from "lodash.debounce";
 
 import { InputGroup, Dropdown } from "react-bootstrap";
 
-import { StyledFormControl, StyledSuggestion } from "./TopSearch.styled";
-import { StyledButton as Button } from "../button";
+import {
+  StyledFormControl,
+  StyledSuggestion,
+} from "../../components/top-search/TopSearch.styled";
+import { StyledButton as Button } from "../../components/button";
+import { getSuggestedItems } from "./service/Topsearch.service";
 
 export const TopSearch = (): JSX.Element => {
   const { t } = useTranslation("common");
@@ -15,8 +19,10 @@ export const TopSearch = (): JSX.Element => {
 
   const openDropdown = () => setVisible(true);
 
-  const fetchDropdownOptions = (key: string) =>
-    setDropdownOptions(["a", "b", "c"]);
+  const fetchDropdownOptions = async (key: string) => {
+    const options = await getSuggestedItems(key);
+    setDropdownOptions(options);
+  };
 
   const debounceDropdown = useCallback(
     debounce((nextValue: string) => fetchDropdownOptions(nextValue), 1000),
@@ -43,15 +49,12 @@ export const TopSearch = (): JSX.Element => {
             />
 
             <Dropdown show={visible}>
-
               <StyledSuggestion>
                 {dropdownOptions.map((value) => (
                   <Dropdown.Item key={value}>{value}</Dropdown.Item>
                 ))}
               </StyledSuggestion>
-
             </Dropdown>
-
           </div>
         </InputGroup>
       </div>

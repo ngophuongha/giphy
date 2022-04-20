@@ -1,4 +1,4 @@
-import { act, render, waitFor, fireEvent, screen } from "../../../../test";
+import { act, render, waitFor, fireEvent } from "../../../../test";
 import userEvent from "@testing-library/user-event";
 import { GifItem } from "./GifItem";
 
@@ -12,24 +12,19 @@ describe("Gif Item", () => {
         title="mock gif item"
       />
     );
-    // fireEvent.load(document.getElementsByClassName("lazyload-wrapper")[0]);
-    // window.scrollTo(0, 100);
-    fireEvent.scroll(document.getElementsByClassName("lazyload-wrapper")[0], {
+    fireEvent.scroll(window, {
       target: { scrollY: 50 },
     });
-    // setTimeout(() => {
-    //   expect(document.querySelector(".lazyload-placeholder")).to.not.exist;
-    // }, 1000);
-    await waitFor(
-      () => {
-        // screen.debug();
-        // const lazyload = document.getElementsByClassName("lazyload-wrapper")[0];
-        // expect(document.querySelector(".lazyload-placeholder")).to.not.exist;
-        // expect(getByText("mock gif item")).toBeInTheDocument();
-      },
-      { timeout: 4000 }
-    );
-    expect(container.firstChild).toMatchSnapshot();
+    // await waitFor(
+    //   () => {
+    //     // screen.debug();
+    //     // const lazyload = document.getElementsByClassName("lazyload-wrapper")[0];
+    //     // expect(document.querySelector(".lazyload-placeholder")).to.not.exist;
+    //     // expect(getByText("mock gif item")).toBeInTheDocument();
+    //   },
+    //   { timeout: 4000 }
+    // );
+    expect(container).toMatchSnapshot();
   });
 
   it.skip("should show an image in fullscreen when clicking on gif item", async () => {
