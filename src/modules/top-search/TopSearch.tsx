@@ -24,6 +24,7 @@ export const TopSearch = (): JSX.Element => {
     setDropdownOptions(options);
   };
 
+
   const debounceDropdown = useCallback(
     debounce((nextValue: string) => fetchDropdownOptions(nextValue), 1000),
     []
