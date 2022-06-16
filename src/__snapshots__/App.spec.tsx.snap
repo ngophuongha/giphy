@@ -7,7 +7,7 @@ exports[`Index Page should match snapshot 1`] = `
   overflow-x: hidden;
 }
 
-.c5 {
+.c6 {
   color: #000000;
 }
 
@@ -35,6 +35,11 @@ exports[`Index Page should match snapshot 1`] = `
 }
 
 .c4 {
+  border: 1px solid #d3d3d3;
+  position: inherit;
+}
+
+.c5 {
   padding: 0.25rem !important;
   border-radius: 0.25rem;
   border: 1px solid #d3d3d3;
@@ -42,7 +47,7 @@ exports[`Index Page should match snapshot 1`] = `
   background-color: #fff;
 }
 
-.c4:hover {
+.c5:hover {
   background-color: #444444;
   color: #ffffff;
 }
@@ -213,22 +218,41 @@ exports[`Index Page should match snapshot 1`] = `
         </div>
       </nav>
       <div
-        class="my-4 input-group"
+        class="d-flex w-100"
       >
-        <input
-          aria-label="gif-sticker-search"
-          class="c3 form-control"
-          placeholder="searchPlaceholder"
-        />
-        <button
-          class="c4"
-          id="search-btn"
+        <div
+          class="d-flex w-100"
         >
-          searchBtn
-        </button>
+          <div
+            class="my-4 input-group"
+          >
+            <div
+              class="d-flex w-100 flex-column"
+            >
+              <input
+                aria-label="gif-sticker-search"
+                class="c3 form-control"
+                placeholder="searchPlaceholder"
+                value=""
+              />
+              <div
+                class="c4 dropdown-menu"
+                x-placement="bottom-start"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <button
+            class="c5 mt-4"
+            id="search-btn"
+          >
+            searchBtn
+          </button>
+        </div>
       </div>
       <header
-        class="c5 d-flex align-items-center"
+        class="c6 d-flex align-items-center"
       >
         <svg
           aria-hidden="true"

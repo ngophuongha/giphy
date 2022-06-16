@@ -1,6 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Primary Layout should match snapshot 1`] = `
+.c1 {
+  background-color: #fff !important;
+  color: #000000 !important;
+}
+
+.c2 {
+  border: 1px solid #d3d3d3;
+  position: inherit;
+}
+
+.c3 {
+  padding: 0.25rem !important;
+  border-radius: 0.25rem;
+  border: 1px solid #d3d3d3;
+  color: #000000;
+  background-color: #fff;
+}
+
+.c3:hover {
+  background-color: #444444;
+  color: #ffffff;
+}
+
 .c0 {
   background-color: #fff;
   color: #000000;
@@ -15,7 +38,40 @@ exports[`Primary Layout should match snapshot 1`] = `
       class="container container"
     >
       NavBar
-      Top Search
+      <div
+        class="d-flex w-100"
+      >
+        <div
+          class="d-flex w-100"
+        >
+          <div
+            class="my-4 input-group"
+          >
+            <div
+              class="d-flex w-100 flex-column"
+            >
+              <input
+                aria-label="gif-sticker-search"
+                class="c1 form-control"
+                placeholder="searchPlaceholder"
+                value=""
+              />
+              <div
+                class="c2 dropdown-menu"
+                x-placement="bottom-start"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <button
+            class="c3 mt-4"
+            id="search-btn"
+          >
+            searchBtn
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

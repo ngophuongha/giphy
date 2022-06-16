@@ -1,49 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Gif Item should render without crashing 1`] = `
-<div
-  class="lazyload-wrapper "
->
+<div>
   <div
-    class="mt-2 card"
+    class="lazyload-wrapper "
   >
-    <img
-      class="card-img-top"
-      src="placeholder-img.png"
-    />
     <div
-      class="card-body"
+      class="mt-2 card"
     >
+      <img
+        class="card-img-top"
+        src="placeholder-img.png"
+      />
       <div
-        class="placeholder-glow card-title h5"
+        class="card-body"
       >
-        <span
-          class="col-6 placeholder"
-        />
+        <div
+          class="placeholder-glow card-title h5"
+        >
+          <span
+            class="col-6 placeholder"
+          />
+        </div>
+        <p
+          class="placeholder-glow card-text"
+        >
+          <span
+            class="col-7 placeholder"
+          />
+           
+          <span
+            class="col-4 placeholder"
+          />
+           
+          <span
+            class="col-4 placeholder"
+          />
+           
+          <span
+            class="col-6 placeholder"
+          />
+           
+          <span
+            class="col-8 placeholder"
+          />
+        </p>
       </div>
-      <p
-        class="placeholder-glow card-text"
-      >
-        <span
-          class="col-7 placeholder"
-        />
-         
-        <span
-          class="col-4 placeholder"
-        />
-         
-        <span
-          class="col-4 placeholder"
-        />
-         
-        <span
-          class="col-6 placeholder"
-        />
-         
-        <span
-          class="col-8 placeholder"
-        />
-      </p>
     </div>
   </div>
 </div>
